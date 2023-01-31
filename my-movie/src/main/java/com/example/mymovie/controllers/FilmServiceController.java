@@ -21,9 +21,9 @@ public class FilmServiceController {
     };
     private static final Map<String, Film> FilmData = new HashMap<String, Film>() {
         {
-            put("Hobbit",new Film("Hobbit","realisateur1",new Date(2033, 1, 16),ActeurData.get(1)));
-            put("Avatar",new Film("Avatar","realisateur2",new Date(2023, 5, 12),ActeurData.get(3)));
-            put("Harry Potter",new Film("Harry Potter","realisateur3",new Date(2018, 2, 4),ActeurData.get(2)));
+            put("Hobbit",new Film("Hobbit","realisateur1",new Date(2033, 1, 16),ActeurData.get("Aiman")));
+            put("Avatar",new Film("Avatar","realisateur2",new Date(2023, 5, 12),ActeurData.get("Aiman")));
+            put("Harry Potter",new Film("Harry Potter","realisateur3",new Date(2018, 2, 4),ActeurData.get("Aiman")));
         }
     };
 
@@ -66,6 +66,5 @@ public class FilmServiceController {
         }
         return film;
     }
-
 
 }
